@@ -1,0 +1,46 @@
+# Default to text and auto
+* text=auto
+
+# Lock batchfile line endings to CRLF
+*.bat text eol=crlf
+
+# Lock shell script line endings to LF
+*.sh text eol=lf
+
+# Unity files
+*.unity text merge=unityyamlmerge eol=lf
+*.unity.meta text merge=unityyamlmerge eol=lf
+*.asset text merge=unityyamlmerge eol=lf
+*.asset.meta text merge=unityyamlmerge eol=lf
+*.prefab text merge=unityyamlmerge eol=lf
+*.prefab.meta text merge=unityyamlmerge eol=lf
+
+# Script files
+*.cs text diff=csharp eol=lf
+*.cs.meta text eol=lf
+*.js text eol=lf
+*.js.meta text eol=lf
+
+# Image files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Audio files
+*.wav binary
+*.mp3 binary
+*.ogg binary
+
+# 3D model files
+*.fbx binary
+*.obj binary
+
+# Other binary files
+*.aif binary
+*.ttf binary
+*.pdf binary
+*.zip binary
+*.exe binary
+*.dll binary
