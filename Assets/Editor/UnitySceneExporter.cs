@@ -18,11 +18,11 @@ using Debug = UnityEngine.Debug;
 ///     - GitHub CLI (gh) must be installed and authenticated
 ///     - User must have appropriate GitHub repository permissions
 ///     Usage:
-///     1. Open the window from Tools > Export &amp; Release Window
+///     1. Open the window from Tools > Export & Release Window
 ///     2. Set the version tag (e.g., v1.0.0)
 ///     3. Add release notes
 ///     4. Configure the scenes source path (defaults to Assets/ShowcaseSamples)
-///     5. Click "Export Scenes &amp; Release" to:
+///     5. Click "Export Scenes & Release" to:
 ///     - Export all scenes in the specified path as .unitypackage files
 ///     - Create a git tag
 ///     - Create a GitHub release with the exported packages
