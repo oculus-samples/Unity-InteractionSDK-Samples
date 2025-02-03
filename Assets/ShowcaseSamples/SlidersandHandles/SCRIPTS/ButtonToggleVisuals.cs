@@ -20,22 +20,26 @@
 
 using UnityEngine;
 
-public class ButtonToggleVisuals : MonoBehaviour
+namespace Meta.XR.InteractionSDK.Samples
 {
-    private bool _isOn;
-    [SerializeField] GameObject OnVisual;
-    [SerializeField] GameObject OffVisual;
-    // Start is called before the first frame update
-    void Start()
+    public class ButtonToggleVisuals : MonoBehaviour
     {
-        ToggleButton();
-    }
+        [SerializeField] GameObject _onVisual;
+        [SerializeField] GameObject _offVisual;
 
-    public void ToggleButton()
-    {
-        _isOn = !_isOn;
+        private bool _isOn;
 
-        OnVisual.SetActive(_isOn);
-        OffVisual.SetActive(!_isOn);
+        void Start()
+        {
+            ToggleButton();
+        }
+
+        private void ToggleButton()
+        {
+            _isOn = !_isOn;
+
+            _onVisual.SetActive(_isOn);
+            _offVisual.SetActive(!_isOn);
+        }
     }
 }

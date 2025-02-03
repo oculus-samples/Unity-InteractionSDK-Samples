@@ -20,27 +20,25 @@
 
 using UnityEngine;
 
-public class BasicToggle : MonoBehaviour
+namespace Meta.XR.InteractionSDK.Samples
 {
-    [SerializeField] private bool isOn;
-    [SerializeField] private Animator _animator;
-
-    void Start()
+    public class BasicToggle : MonoBehaviour
     {
-        Toggle();
-    }
+        [SerializeField] private bool _isOn;
+        [SerializeField] private Animator _animator;
 
-
-    public void Toggle()
-    {
-        isOn = !isOn;
-        if (isOn)
+        void Start()
         {
-            _animator.SetBool("isOn", true);
+            Toggle();
         }
-        else
+
+        public void Toggle()
         {
-            _animator.SetBool("isOn", false);
+            _isOn = !_isOn;
+            if (_animator)
+            {
+                _animator.SetBool("isOn", _isOn);
+            }
         }
     }
 }

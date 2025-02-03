@@ -20,75 +20,88 @@
 
 using UnityEngine;
 
-public class ToggleMove : MonoBehaviour
+namespace Meta.XR.InteractionSDK.Samples
 {
-    [SerializeField] private GameObject OnLabel;
-    [SerializeField] private GameObject OffLabel;
-    private bool isOn;
-    public bool isMoving;
-    [SerializeField] private AudioSource Click;
-    [SerializeField] private GameObject _toggleHandle;
-
-    void Start()
+    public class ToggleMove : MonoBehaviour
     {
-        CheckStatus();
-    }
+        [SerializeField] private GameObject _onLabel;
+        [SerializeField] private GameObject _offLabel;
+        [SerializeField] private AudioSource _click;
+        [SerializeField] private GameObject _toggleHandle;
 
-    private void Update()
-    {
-        if (isMoving)
+        private bool _isMoving;
+        private bool _isOn;
+
+        void Start()
         {
             CheckStatus();
         }
-        else
-        {
-            SnapToPlace();
-        }
-    }
 
-    public void CheckStatus()
-    {
-        if (_toggleHandle.transform.localPosition.x > 0)
+        private void Update()
         {
-            if (!isOn)
+            if (_isMoving)
             {
-                isOn = true;
-                OnLabel.SetActive(true);
-                OffLabel.SetActive(false);
-                Click.Play();
+                CheckStatus();
+            }
+            else
+            {
+                SnapToPlace();
             }
         }
-        else
+
+        private void CheckStatus()
         {
-            if (isOn)
+            if (_toggleHandle.transform.localPosition.x > 0)
             {
-                isOn = false;
-                OnLabel.SetActive(false);
-                OffLabel.SetActive(true);
-                Click.Play();
+                if (!_isOn)
+                {
+                    _isOn = true;
+                    ToggleVisuals(true);
+                    _click.Play();
+                }
+            }
+            else
+            {
+                if (_isOn)
+                {
+                    _isOn = false;
+                    ToggleVisuals(false);
+                    _click.Play();
+                }
             }
         }
-    }
 
-    public void SnapToPlace()
-    {
-
-        if (isOn)
+        private void SnapToPlace()
         {
-            _toggleHandle.transform.localPosition = new Vector3(0.06f, 0, 0);
-            OnLabel.SetActive(true);
-            OffLabel.SetActive(false);
-        }
-        else
-        {
-            _toggleHandle.transform.localPosition = new Vector3(-0.06f, 0, 0);
-            OnLabel.SetActive(false);
-            OffLabel.SetActive(true);
-        }
-    }
 
-    public void SetMoving(bool _isMoving)
-    {
-        isMoving = _isMoving;
+            if (_isOn)
+            {
+                _toggleHandle.transform.localPosition = new Vector3(0.06f, 0, 0);
+                ToggleVisuals(false);
+            }
+            else
+            {
+                _toggleHandle.transform.localPosition = new Vector3(-0.06f, 0, 0);
+                ToggleVisuals(true);
+            }
+        }
+
+        public void SetMoving(bool setMoving)
+        {
+            _isMoving = setMoving;
+        }
+
+        private void ToggleVisuals(bool state)
+        {
+            if (_onLabel)
+            {
+                _onLabel.SetActive(state);
+            }
+
+            if (_offLabel)
+            {
+                _offLabel.SetActive(!state);
+            }
+        }
     }
 }

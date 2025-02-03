@@ -21,69 +21,87 @@
 using UnityEngine;
 using TMPro;
 
-public class StepsMove : MonoBehaviour
+namespace Meta.XR.InteractionSDK.Samples
 {
-    [SerializeField] private TextMeshProUGUI GearText;
-    private int gear;
-    public bool isMoving;
-    [SerializeField] private AudioSource Click;
-    [SerializeField] private Material _offMaterial;
-    [SerializeField] private Material _onMaterial;
-    [SerializeField] private Renderer[] _materialList;
-    // Start is called before the first frame update
-    void Start()
+    public class StepsMove : MonoBehaviour
     {
-        CheckStatus();
-    }
+        [SerializeField] private TextMeshProUGUI _gearText;
+        [SerializeField] private AudioSource _click;
+        [SerializeField] private Material _offMaterial;
+        [SerializeField] private Material _onMaterial;
+        [SerializeField] private Renderer[] _materialList;
 
-    private void Update()
-    {
-        if (isMoving)
+        private bool _isMoving;
+        private int _gear;
+
+        void Start()
         {
             CheckStatus();
         }
-        else
+
+        private void Update()
         {
-            SnapToPlace();
+            if (_isMoving)
+            {
+                CheckStatus();
+            }
+            else
+            {
+                SnapToPlace();
+            }
         }
-    }
 
-    public void CheckStatus()
-    {
-        if (transform.localPosition.x < -0.0375f) gear = 4;
-        else if (transform.localPosition.x < -0.0125f) gear = 3;
-        else if (transform.localPosition.x < 0.0125f) gear = 2;
-        else if (transform.localPosition.x < 0.0375f) gear = 1;
-        else gear = 0;
-
-        foreach (var item in _materialList)
+        private void CheckStatus()
         {
-            item.material = _offMaterial;
-        }
-        _materialList[gear].material = _onMaterial;
+            if (transform.localPosition.x < -0.0375f) _gear = 4;
+            else if (transform.localPosition.x < -0.0125f) _gear = 3;
+            else if (transform.localPosition.x < 0.0125f) _gear = 2;
+            else if (transform.localPosition.x < 0.0375f) _gear = 1;
+            else _gear = 0;
 
-        if (GearText.text != gear.ToString())
+            foreach (var item in _materialList)
+            {
+                item.material = _offMaterial;
+            }
+
+            _materialList[_gear].material = _onMaterial;
+
+            if (_gearText.text != _gear.ToString())
+            {
+                _click.Play();
+                _gearText.text = _gear.ToString();
+            }
+        }
+
+        private void SnapToPlace()
         {
-            Click.Play();
-            GearText.text = gear.ToString();
+            float newLocalPosX = 0f;
+
+            switch (_gear)
+            {
+                case 4:
+                    newLocalPosX = -0.06f;
+                    break;
+                case 3:
+                    newLocalPosX = -0.025f;
+                    break;
+                case 2:
+                    newLocalPosX = 0f;
+                    break;
+                case 1:
+                    newLocalPosX = 0.025f;
+                    break;
+                default:
+                    newLocalPosX = 0.06f;
+                    break;
+            }
+
+            transform.localPosition = new Vector3(newLocalPosX, 0f, 0f);
         }
-    }
 
-    public void SnapToPlace()
-    {
-        float newLocalPosX = 0f;
-
-        if (gear == 4) newLocalPosX = -0.06f;
-        else if (gear == 3) newLocalPosX = -0.025f;
-        else if (gear == 2) newLocalPosX = 0f;
-        else if (gear == 1) newLocalPosX = 0.025f;
-        else newLocalPosX = 0.06f;
-
-        transform.localPosition = new Vector3(newLocalPosX, 0f, 0f);
-    }
-
-    public void SetMoving(bool _isMoving)
-    {
-        isMoving = _isMoving;
+        public void SetMoving(bool setMoving)
+        {
+            _isMoving = setMoving;
+        }
     }
 }
