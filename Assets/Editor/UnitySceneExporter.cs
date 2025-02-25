@@ -34,7 +34,6 @@ public class UnityExportAndReleaseWindow : EditorWindow
     // Serialized fields to persist values between Unity session restarts
     [SerializeField] private string versionTag = "v1.0.0";
     [SerializeField] private string releaseNotes = "Release notes here...";
-    [SerializeField] private bool exportWithDependencies = true;
     [SerializeField] private string customExportPath = "Exports/UnityPackages";
     [SerializeField] private string scenesSourcePath = "Assets/ShowcaseSamples";
 
@@ -150,11 +149,6 @@ public class UnityExportAndReleaseWindow : EditorWindow
                     }
                 }
             }
-
-            exportWithDependencies = EditorGUILayout.Toggle(
-                "Export With Dependencies",
-                exportWithDependencies
-            );
         }
     }
 
@@ -270,7 +264,8 @@ public class UnityExportAndReleaseWindow : EditorWindow
     }
 
     /// <summary>
-    /// Exports a single scene to a .unitypackage file.
+    /// Exports all assets from the folder containing the given scene.
+    /// This ensures only subfolder contents are included, excluding external dependencies.
     /// </summary>
     /// <param name="scenePath">The asset path to the scene</param>
     /// <returns>The path to the exported package, or null if export failed</returns>
@@ -278,26 +273,43 @@ public class UnityExportAndReleaseWindow : EditorWindow
     {
         try
         {
-            var sceneName = Path.GetFileNameWithoutExtension(scenePath);
-            var packagePath = Path.Combine(
+            string folderPath = Path.GetDirectoryName(scenePath);
+
+            // Collect all asset GUIDs under that folder (including subfolders).
+            string[] guidsInFolder = AssetDatabase.FindAssets(string.Empty, new[] { folderPath });
+            if (guidsInFolder.Length == 0)
+            {
+                Debug.LogWarning($"No assets found in folder path: {folderPath}");
+                return null;
+            }
+
+            // Convert GUIDs to asset paths.
+            List<string> assetPaths = new List<string>();
+            foreach (string guid in guidsInFolder)
+            {
+                assetPaths.Add(AssetDatabase.GUIDToAssetPath(guid));
+            }
+
+            // Build the package name from the scene name and version tag.
+            string sceneName = Path.GetFileNameWithoutExtension(scenePath);
+            string packagePath = Path.Combine(
                 customExportPath,
                 $"{sceneName}_{versionTag}.unitypackage"
             );
 
-            var options = exportWithDependencies ? ExportPackageOptions.Recurse : ExportPackageOptions.Default;
-
+            // Using 'Default' so we do NOT recursively include all project dependencies.
             AssetDatabase.ExportPackage(
-                scenePath,
+                assetPaths.ToArray(),
                 packagePath,
-                options
+                ExportPackageOptions.Default
             );
 
-            Debug.Log($"Exported {sceneName} to {packagePath}");
+            Debug.Log($"Exported folder '{folderPath}' to {packagePath} \nIncluded assets: {assetPaths.Count}");
             return packagePath;
         }
         catch (Exception e)
         {
-            Debug.LogError($"Failed to export scene {scenePath}: {e}");
+            Debug.LogError($"Failed to export folder for scene {scenePath}: {e}");
             return null;
         }
     }
