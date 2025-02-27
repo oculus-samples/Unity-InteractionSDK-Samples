@@ -43,4 +43,4 @@ External samples for the Interaction SDK (ISDK) featuring advanced implementatio
 
 ## Licenses
 
-The [MIT LICENSE](./LICENSE.txt) applies to the majority of the project, however files from [Text Mesh Pro](https://unity.com/legal/licenses/unity-companion-license) are licensed under their respective licensing terms.
+The [OCULUS SDK LICENSE](./LICENSE.txt) applies to the majority of the project, however files from [Text Mesh Pro](https://unity.com/legal/licenses/unity-companion-license) are licensed under their respective licensing terms.
