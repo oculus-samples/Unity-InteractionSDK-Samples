@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.interaction.ovr": "72.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "74.0.1",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",
