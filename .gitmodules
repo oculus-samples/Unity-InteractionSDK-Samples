@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/UnitySceneExporter"]
+	path = Assets/Editor/UnitySceneExporter
+	url = https://github.com/SaadKhan64/UnitySceneExporter.git
