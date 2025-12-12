@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb683c34effd4fa4ba2a6f629bae609e, type: 3}
+  m_Name: DartProfile
+  m_EditorClassIdentifier:
+  _velocityScale: {x: 1, y: 1, z: 2}
+  _velocityAdd: {x: 0, y: 0, z: 1}
+  _maxSpeed: 50
+  _spinScale: {x: 0, y: 0, z: 0.1}
+  _spinAdd: {x: 0, y: 0, z: 0}
+  _maxSpin: 5
+  _alignForwardOnce: 1
+  _keepForwardToVelocity: 1
+  _forwardLerpSpeed: 16
+  _enableBuiltIns: 1
+  _gravityScale: 0.8
+  _localConstantForce: {x: 0, y: 0.4, z: 0}
+  _localConstantTorque: {x: 0, y: 0, z: 0}
+  _localVelocityDamping: {x: 1, y: 1, z: 1}
+  _linearDrag: 0.002
+  _angularDrag: 0.02
