@@ -12,55 +12,55 @@ EditorBuildSettings:
     path: Assets/ShowcaseSamples/SlidersandHandles/Scenes/SlidersandHandles.unity
     guid: 594f39dab9a65164aa4b9bf8240bdba4
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/BodyPoseDetectionExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/BodyPoseDetectionExamples.unity
     guid: 06a339ff5513d7f49a91ab90cbe194d4
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/ComprehensiveRigExample.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/ComprehensiveRigExample.unity
     guid: 2efe93cb8972cae439bfba2dcd4165f0
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/ConcurrentHandsControllersExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/ConcurrentHandsControllersExamples.unity
     guid: 10824ac1a08b9a0459de4c071e1db2aa
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/DistanceGrabExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/DistanceGrabExamples.unity
     guid: e1c1f1d4144ac8849ac1833b99bdfd23
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/GestureExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/GestureExamples.unity
     guid: 4ee2a082a0e621b49ab01667c66f1599
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/HandGrabExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/HandGrabExamples.unity
     guid: 39ae0e546b9edc0408d3b11c6a7c2814
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/HandGrabUseExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/HandGrabUseExamples.unity
     guid: 509f8fa80c708b343a603a4771d35c85
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/HandOnHandInteraction.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/HandOnHandInteraction.unity
     guid: 9a14d66ca19a74d40a9faa05357bddc1
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/LocomotionExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/LocomotionExamples.unity
     guid: d37ed7e92220d1045a36bc73c7c4cf16
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/PanelWithManipulators.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/PanelWithManipulators.unity
     guid: bafd0df297556dd44832193b22fca1ae
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/PokeExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/PokeExamples.unity
     guid: ada3086bde0ab18459589e22d8d9e182
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/PoseExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/PoseExamples.unity
     guid: 4fe358b21fe17764db89a9ab9f202327
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/RayExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/RayExamples.unity
     guid: 1b2d3f90c0f50b94cb910c66c773d00d
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/SnapExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/SnapExamples.unity
     guid: 01ca63189b69e00488487d660224a315
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/TouchGrabExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/TouchGrabExamples.unity
     guid: ade7d3882b4495145a8fe79f5624beab
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/TransformerExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/TransformerExamples.unity
     guid: 7475942f60c376744ba1ec487d140105
   - enabled: 1
-    path: Assets/Samples/MetaXRInteractionSDK/81.0.0/ExampleScenes/UISetExamples.unity
+    path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/UISetExamples.unity
     guid: 07e3686372a704147b219707ee3c6f62
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d730f8000e2f1814291fdde8c7308752, type: 2}
