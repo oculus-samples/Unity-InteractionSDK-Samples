@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7949635773590116128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7563647662595818843}
+  - component: {fileID: 1746580174576670754}
+  - component: {fileID: 7676856946839693999}
+  - component: {fileID: 2377730428730864431}
+  m_Layer: 0
+  m_Name: TelepathLocomotor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7563647662595818843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949635773590116128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1746580174576670754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949635773590116128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d88cb1c261546d458db94dfa27df6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterFeet: {fileID: 0}
+  _cornerThreshold: 0.1
+  _agentIndex: 0
+  _areasID: -1
+  _maxNavMeshCornersCount: 30
+  _context: {fileID: 0}
+--- !u!114 &7676856946839693999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949635773590116128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee042cb62597da478d4b43c59e71d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _telepathLocomotor: {fileID: 1746580174576670754}
+  _hoverColor: {r: 1, g: 1, b: 1, a: 0.6}
+  _selectColor: {r: 1, g: 1, b: 1, a: 1}
+  _radius: 0.05
+  _step: 0.5
+  _material: {fileID: 2100000, guid: 90b1d3af1bd293749abaec45aae996f0, type: 2}
+  _maxDots: 100
+--- !u!114 &2377730428730864431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949635773590116128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ad4f1ddee798f45a20be4efda35c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _broadcasters:
+  - {fileID: 1746580174576670754}
+  _handler: {fileID: 0}
+  _handlers:
+  - {fileID: 0}
