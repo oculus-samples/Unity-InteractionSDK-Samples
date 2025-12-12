@@ -6,9 +6,9 @@ PhysicMaterial:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BounsyPong
-  dynamicFriction: 0.001
-  staticFriction: 0.002
+  m_Name: BouncyBasketball
+  dynamicFriction: 0.2
+  staticFriction: 0.3
   bounciness: 0.9
-  frictionCombine: 3
+  frictionCombine: 0
   bounceCombine: 3

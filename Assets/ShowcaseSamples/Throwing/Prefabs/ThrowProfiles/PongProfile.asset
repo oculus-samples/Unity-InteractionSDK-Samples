@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb683c34effd4fa4ba2a6f629bae609e, type: 3}
   m_Name: PongProfile
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   _velocityScale: {x: 1, y: 1, z: 1}
   _velocityAdd: {x: 0, y: 0, z: 0}
   _maxSpeed: 20
@@ -25,6 +25,6 @@ MonoBehaviour:
   _gravityScale: 1
   _localConstantForce: {x: 0, y: 0, z: 0}
   _localConstantTorque: {x: 0, y: 0, z: 0}
-  _localVelocityDamping: {x: 0.6, y: 0.6, z: 0.6}
-  _linearDrag: 0.1
+  _localVelocityDamping: {x: 0.8, y: 0.8, z: 0.8}
+  _linearDrag: 0.08
   _angularDrag: 0.05

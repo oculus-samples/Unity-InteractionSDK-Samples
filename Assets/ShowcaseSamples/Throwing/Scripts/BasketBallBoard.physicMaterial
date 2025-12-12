@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: BasketBallBoard
   dynamicFriction: 0.8
   staticFriction: 0.8
-  bounciness: 0.28
+  bounciness: 0.2
   frictionCombine: 0
   bounceCombine: 1

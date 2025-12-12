@@ -11,8 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb683c34effd4fa4ba2a6f629bae609e, type: 3}
   m_Name: FrisbeeProfile
-  m_EditorClassIdentifier:
-  _velocityScale: {x: 1, y: 1, z: 1.4}
+  m_EditorClassIdentifier: 
+  _velocityScale: {x: 1.4, y: 1, z: 1.6}
   _velocityAdd: {x: 0, y: 0, z: 0}
   _maxSpeed: 25
   _spinScale: {x: 0.1, y: 2, z: 0.1}
@@ -25,6 +25,6 @@ MonoBehaviour:
   _gravityScale: 0.35
   _localConstantForce: {x: 0, y: 2, z: 0}
   _localConstantTorque: {x: 0, y: 4, z: 0}
-  _localVelocityDamping: {x: 0.6, y: 0.8, z: 0.6}
+  _localVelocityDamping: {x: 0.8, y: 0.8, z: 0.8}
   _linearDrag: 0.002
   _angularDrag: 0.02
