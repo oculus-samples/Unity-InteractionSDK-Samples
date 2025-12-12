@@ -2,6 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.Pool;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Oculus.Interaction;
 using Oculus.Interaction.Throw;
@@ -25,6 +26,14 @@ namespace Meta.XR.InteractionSDK.Samples
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetStaticState()
         {
+            s_pools.Clear();
+            SceneManager.sceneUnloaded -= OnSceneUnloaded;
+            SceneManager.sceneUnloaded += OnSceneUnloaded;
+        }
+
+        private static void OnSceneUnloaded(Scene scene)
+        {
+            // Clear stale pool references.
             s_pools.Clear();
         }
 

@@ -20,7 +20,21 @@ MonoBehaviour:
     SceneName: SlidersandHandles
     SceneGuid: 594f39dab9a65164aa4b9bf8240bdba4
     Thumbnail: {fileID: 21300000, guid: 2a5f88fadd72f784aa7eb964db5dfe99, type: 3}
+  - DisplayName: Throwing
+    SceneName: ThrowingSample
+    SceneGuid: 6d7a49527b98bb34a93e02e7448c84c1
+    Thumbnail: {fileID: 21300000, guid: af96faa551f8adb4bab635ab2ca58b03, type: 3}
+  - DisplayName: Locomotion and Climbing
+    SceneName: LocomotionExamplesClimbing
+    SceneGuid: 5a560cce5d663cc4297ebb760524f802
+    Thumbnail: {fileID: 21300000, guid: afc2d7d677d6d9d419ff2253c2d062a7, type: 3}
   _sceneInfoAssets:
   - DisplayName: Sliders and Handles
     SceneAsset: {fileID: 102900000, guid: 594f39dab9a65164aa4b9bf8240bdba4, type: 3}
     Thumbnail: {fileID: 21300000, guid: 2a5f88fadd72f784aa7eb964db5dfe99, type: 3}
+  - DisplayName: Throwing
+    SceneAsset: {fileID: 102900000, guid: 6d7a49527b98bb34a93e02e7448c84c1, type: 3}
+    Thumbnail: {fileID: 21300000, guid: af96faa551f8adb4bab635ab2ca58b03, type: 3}
+  - DisplayName: Locomotion and Climbing
+    SceneAsset: {fileID: 102900000, guid: 5a560cce5d663cc4297ebb760524f802, type: 3}
+    Thumbnail: {fileID: 21300000, guid: afc2d7d677d6d9d419ff2253c2d062a7, type: 3}

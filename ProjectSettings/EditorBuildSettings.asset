@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/ShowcaseSamples/SlidersandHandles/Scenes/SlidersandHandles.unity
     guid: 594f39dab9a65164aa4b9bf8240bdba4
   - enabled: 1
+    path: Assets/ShowcaseSamples/Throwing/Scenes/ThrowingSample.unity
+    guid: 6d7a49527b98bb34a93e02e7448c84c1
+  - enabled: 1
+    path: Assets/ShowcaseSamples/Locomotion/Scenes/LocomotionExamplesClimbing.unity
+    guid: 5a560cce5d663cc4297ebb760524f802
+  - enabled: 1
     path: Assets/Samples/Meta XR Interaction SDK/83.0.0/Example Scenes/BodyPoseDetectionExamples.unity
     guid: 06a339ff5513d7f49a91ab90cbe194d4
   - enabled: 1
