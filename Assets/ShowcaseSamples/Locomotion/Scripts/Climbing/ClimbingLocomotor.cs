@@ -20,6 +20,7 @@
 
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 using static Oculus.Interaction.Locomotion.ClimbingEvent;
@@ -31,6 +32,7 @@ namespace Oculus.Interaction.Locomotion
     /// LocomotionEvent pipeline and transformers them into actual Locomotion movement that
     /// can be processed by a simpler locomotor such as the <see cref="FirstPersonLocomotor"/>
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class ClimbingLocomotor : MonoBehaviour,
         ILocomotionEventHandler, ILocomotionEventBroadcaster,
         IDeltaTimeConsumer

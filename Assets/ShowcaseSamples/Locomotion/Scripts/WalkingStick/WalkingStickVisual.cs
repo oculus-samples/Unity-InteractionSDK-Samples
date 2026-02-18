@@ -18,6 +18,7 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -26,6 +27,7 @@ namespace Oculus.Interaction.Locomotion
     /// Visual class for a <see cref="WalkingStick"/> that draws
     /// a cane and highlights it based on the current state.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class WalkingStickVisual : MonoBehaviour
     {
         [SerializeField]

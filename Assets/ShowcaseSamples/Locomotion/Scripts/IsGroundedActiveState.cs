@@ -18,6 +18,7 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -25,6 +26,7 @@ namespace Oculus.Interaction.Locomotion
     /// <summary>
     /// ActiveState indicating if the associated <see cref="CharacterController"/> is touching the ground
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class IsGroundedActiveState : MonoBehaviour, IActiveState
     {
         [SerializeField]

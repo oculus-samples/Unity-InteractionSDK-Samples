@@ -1,10 +1,12 @@
 // (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-Throwing")]
     public class BowlingPinsManager : MonoBehaviour
     {
         public Transform[] objects;

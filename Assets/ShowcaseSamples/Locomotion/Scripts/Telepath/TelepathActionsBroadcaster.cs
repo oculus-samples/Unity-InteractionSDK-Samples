@@ -19,6 +19,7 @@
  */
 
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -27,6 +28,7 @@ namespace Oculus.Interaction.Locomotion
     /// This component creates decorated <see cref="LocomotionEvent"/> from a <see cref="TeleportInteractor"/> in order
     /// to signify the start and end of a teleportation action that can be used by the <see cref="TelepathLocomotor"/>.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class TelepathActionsBroadcaster : MonoBehaviour,
         ILocomotionEventBroadcaster
     {

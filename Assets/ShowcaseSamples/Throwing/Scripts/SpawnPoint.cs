@@ -1,10 +1,12 @@
 // (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-Throwing")]
     [RequireComponent(typeof(Grabbable))]
     public sealed class SpawnPoint : MonoBehaviour
     {

@@ -2,6 +2,7 @@
 
 using System.Buffers;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction
@@ -10,6 +11,7 @@ namespace Oculus.Interaction
     /// A Transformer that can translate, rotate and scale a transform using any
     /// number of GrabPoints while also constraining the transformation if desired.
     /// </summary>
+    [MetaCodeSample("ISDK-Throwing")]
     public class HeavyFreeTransformer : MonoBehaviour, ITransformer
     {
         public float Delay = 0.001f;

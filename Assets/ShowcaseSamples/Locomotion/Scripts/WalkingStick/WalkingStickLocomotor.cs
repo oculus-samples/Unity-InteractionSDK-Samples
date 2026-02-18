@@ -21,6 +21,7 @@
 using Oculus.Interaction.Input;
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 using static Oculus.Interaction.Locomotion.LocomotionActionsBroadcaster;
@@ -34,6 +35,7 @@ namespace Oculus.Interaction.Locomotion
     /// When the sticks are released, the user will continue moving in the same direction for a short time using Velocity movements.
     /// If both sticks are pushed down with a strong force, the user will be able to perform a Jump.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class WalkingStickLocomotor : MonoBehaviour,
         ILocomotionEventBroadcaster, IDeltaTimeConsumer
     {

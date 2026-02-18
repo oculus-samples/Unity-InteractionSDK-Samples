@@ -19,6 +19,7 @@
  */
 
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -29,6 +30,7 @@ namespace Oculus.Interaction.Locomotion
     /// <see cref="Climbable"/> will use it to route <see cref="ClimbingEvent"/> from
     /// the interactable side to the Rig.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class ClimbingLocomotionBroadcaster : MonoBehaviour,
         ILocomotionEventBroadcaster
     {

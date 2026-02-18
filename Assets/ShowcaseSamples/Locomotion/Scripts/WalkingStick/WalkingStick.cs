@@ -18,6 +18,7 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -28,6 +29,7 @@ namespace Oculus.Interaction.Locomotion
     /// the player when the stick is pushed against the floor.
     /// Multiple <see cref="WalkingStick"/> can be used at the same time to move.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class WalkingStick : MonoBehaviour
     {
         [SerializeField]

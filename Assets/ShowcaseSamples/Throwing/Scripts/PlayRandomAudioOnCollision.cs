@@ -1,9 +1,11 @@
 // (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-Throwing")]
     public class PlayRandomAudioOnCollision : MonoBehaviour
     {
         public AudioClip[] audioClips;

@@ -19,6 +19,7 @@
  */
 
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 using static Oculus.Interaction.Locomotion.ClimbingEvent;
 
@@ -30,6 +31,7 @@ namespace Oculus.Interaction.Locomotion
     /// and route them using <see cref="ClimbingLocomotionBroadcaster"/> if found at the grab interactor
     /// source so they can be consumed by the Rig.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class Climbable : PointableElement
     {
         [SerializeField, Optional]

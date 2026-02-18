@@ -19,6 +19,7 @@
  */
 
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -29,6 +30,7 @@ namespace Oculus.Interaction.Locomotion
     /// following a path in the specified NavMesh.
     /// In case the target is unreachable, it will create an Absolute translation event to the target.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class TelepathLocomotor : MonoBehaviour,
         ILocomotionEventHandler, ILocomotionEventBroadcaster
     {

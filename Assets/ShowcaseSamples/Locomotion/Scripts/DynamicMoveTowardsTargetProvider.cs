@@ -18,10 +18,12 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction
 {
+    [MetaCodeSample("ISDK-Locomotion")]
     public class DynamicMoveTowardsTargetProvider : MonoBehaviour, IMovementProvider
     {
         [SerializeField]

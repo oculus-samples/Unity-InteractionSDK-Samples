@@ -2,9 +2,11 @@
 
 using UnityEngine;
 using TMPro;
+using Meta.XR.Samples;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-Throwing")]
     public class ScoreManager : MonoBehaviour
     {
         public TextMeshProUGUI ButtonText;

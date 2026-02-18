@@ -2,8 +2,10 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
+[MetaCodeSample("ISDK-Throwing")]
 public class SwapTargets : MonoBehaviour
 {
     public enum TargetType { None, Dart, Plane, Frisbee, CornBag, BeerPong, Football, Bowling, Basketball }

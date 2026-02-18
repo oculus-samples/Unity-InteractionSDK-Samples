@@ -18,6 +18,7 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -26,6 +27,7 @@ namespace Oculus.Interaction.Locomotion
     /// This component draws a sequence of dots connecting the path that the <see cref="TelepathLocomotor"/>
     /// will use to reach the destination.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public class TelepathLocomotionVisual : MonoBehaviour
     {
         [SerializeField]

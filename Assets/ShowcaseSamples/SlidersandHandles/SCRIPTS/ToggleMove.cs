@@ -2,7 +2,7 @@
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  * All rights reserved.
  *
- * Licensed under the Meta Platform Technologies SDK License Agreement (the “SDK License”).
+ * Licensed under the Meta Platform Technologies SDK License Agreement (the "SDK License").
  * You may not use the MPT SDK except in compliance with the SDK License,
  * which is provided at the time of installation or download, or which
  * otherwise accompanies this software in either electronic or hard copy form.
@@ -17,10 +17,12 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-SlidersAndHandles")]
     public class ToggleMove : MonoBehaviour
     {
         [SerializeField] private GameObject _onLabel;

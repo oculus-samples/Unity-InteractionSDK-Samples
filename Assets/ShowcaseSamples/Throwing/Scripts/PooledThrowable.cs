@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.Throw;
 using Object = UnityEngine.Object;
 
 namespace Meta.XR.InteractionSDK.Samples
 {
+    [MetaCodeSample("ISDK-Throwing")]
     [RequireComponent(typeof(Rigidbody), typeof(Grabbable))]
     public sealed class PooledThrowable : MonoBehaviour
     {

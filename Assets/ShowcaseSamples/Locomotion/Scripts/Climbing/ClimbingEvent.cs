@@ -18,6 +18,7 @@
  * limitations under the License.
  */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace Oculus.Interaction.Locomotion
@@ -26,6 +27,7 @@ namespace Oculus.Interaction.Locomotion
     /// ClimbingEvent is a decoration for an <see cref="LocomotionEvent"/> that indicates
     /// when the user starts or stops grabbing a <see cref="Climbable"/> to climb on.
     /// </summary>
+    [MetaCodeSample("ISDK-Locomotion")]
     public struct ClimbingEvent
     {
         /// <summary>
