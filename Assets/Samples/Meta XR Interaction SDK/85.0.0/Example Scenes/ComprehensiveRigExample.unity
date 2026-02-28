@@ -13921,6 +13921,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 208793886}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!54 &208793886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16326,6 +16327,8 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 2121519632}
+  _coneCastingEnabled: 1
+  _debugDrawCone: 0
 --- !u!114 &304057695 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8656817883223332263, guid: 0a7d2469f24041c4284c66706f84c45e,
@@ -21313,6 +21316,11 @@ PrefabInstance:
       objectReference: {fileID: 521174500}
     - target: {fileID: 5590366407522828040, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
         type: 3}
+      propertyPath: _gameObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590366407522828040, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
+        type: 3}
       propertyPath: _gameObjects.Array.data[0]
       value: 
       objectReference: {fileID: 2041321538}
@@ -21320,7 +21328,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _gameObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 683877756}
+      objectReference: {fileID: 2037642199}
+    - target: {fileID: 5590366407522828040, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
+        type: 3}
+      propertyPath: _gameObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 2037642196}
     - target: {fileID: 5638038389960809837, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
         type: 3}
       propertyPath: _toggle
@@ -21331,6 +21344,11 @@ PrefabInstance:
       propertyPath: _tunneling
       value: 
       objectReference: {fileID: 2041321544}
+    - target: {fileID: 5918787263731088430, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
+        type: 3}
+      propertyPath: _gameObjects.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5918787263731088430, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
         type: 3}
       propertyPath: _gameObjects.Array.data[0]
@@ -21345,7 +21363,17 @@ PrefabInstance:
         type: 3}
       propertyPath: _gameObjects.Array.data[2]
       value: 
+      objectReference: {fileID: 2037642198}
+    - target: {fileID: 5918787263731088430, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
+        type: 3}
+      propertyPath: _gameObjects.Array.data[3]
+      value: 
       objectReference: {fileID: 2041321530}
+    - target: {fileID: 5918787263731088430, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
+        type: 3}
+      propertyPath: _gameObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2037642197}
     - target: {fileID: 6370319769469448785, guid: 2b6a1257ec0ff284693f68d0ddccbbe8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23482,12 +23510,6 @@ Transform:
   - {fileID: 1966006691}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &683877756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3842072158680932424, guid: 0a7d2469f24041c4284c66706f84c45e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2041321517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &692736672 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5385430629427633694, guid: 3181eb930f38eb7478bc2a19f785a48f,
@@ -26018,6 +26040,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 0}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!114 &883578957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33148,6 +33171,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 1410426253}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!54 &1410426253
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35458,6 +35482,8 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 2121519632}
+  _coneCastingEnabled: 1
+  _debugDrawCone: 0
 --- !u!114 &1623464506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45751,6 +45777,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2041321517}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037642196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1913997614589834786, guid: 0a7d2469f24041c4284c66706f84c45e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041321517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037642197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1658660232168627227, guid: 0a7d2469f24041c4284c66706f84c45e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041321517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037642198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1210931498640539704, guid: 0a7d2469f24041c4284c66706f84c45e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041321517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037642199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2528761901831007310, guid: 0a7d2469f24041c4284c66706f84c45e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041321517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2041321517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46236,7 +46286,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2041321517}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2037642198}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be5585168c67af345b1074140733215b, type: 3}
@@ -46744,6 +46794,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 2102400544}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!54 &2102400544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52423,6 +52474,8 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 1051748718}
+  _coneCastingEnabled: 1
+  _debugDrawCone: 0
 --- !u!114 &2780506240458594181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54508,6 +54561,8 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 2121519632}
+  _coneCastingEnabled: 1
+  _debugDrawCone: 0
 --- !u!1 &4449745582704520986
 GameObject:
   m_ObjectHideFlags: 0
