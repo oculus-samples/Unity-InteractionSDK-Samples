@@ -36,7 +36,7 @@ External samples for the Interaction SDK (ISDK) featuring advanced implementatio
     ```
 2. **Open Project** in Unity Hub:
    - Select cloned repository folder
-   - Use Unity version **Unity 2022.3 LTS or above**.
+   - Use Unity version **Unity 6000.0 LTS or above**.
 3. **Access Samples**:
    - Navigate to `Assets/ShowcaseSamples/`
    - Open sample scenes directly

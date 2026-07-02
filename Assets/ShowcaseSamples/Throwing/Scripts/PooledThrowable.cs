@@ -120,7 +120,7 @@ namespace Meta.XR.InteractionSDK.Samples
 
                         // Must set non-kinematic BEFORE clearing velocities, then set kinematic
                         pt._rigidbody.isKinematic = false;
-                        pt._rigidbody.velocity = Vector3.zero;
+                        pt._rigidbody.linearVelocity = Vector3.zero;
                         pt._rigidbody.angularVelocity = Vector3.zero;
                         pt._rigidbody.isKinematic = true;
                         pt._rigidbody.WakeUp();
@@ -140,7 +140,7 @@ namespace Meta.XR.InteractionSDK.Samples
 
                         // Must set non-kinematic BEFORE clearing velocities, then set kinematic
                         pt._rigidbody.isKinematic = false;
-                        pt._rigidbody.velocity = Vector3.zero;
+                        pt._rigidbody.linearVelocity = Vector3.zero;
                         pt._rigidbody.angularVelocity = Vector3.zero;
                         pt._rigidbody.isKinematic = true;
                         pt._rigidbody.Sleep();

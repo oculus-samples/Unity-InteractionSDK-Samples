@@ -22,7 +22,7 @@ namespace Meta.XR.InteractionSDK.Samples
         private void Start()
         {
             InitializeRigidbody();
-            _smoothedVelocity = _rigidbody.velocity;
+            _smoothedVelocity = _rigidbody.linearVelocity;
         }
 
         private void OnEnable()
@@ -75,7 +75,7 @@ namespace Meta.XR.InteractionSDK.Samples
                 return;
             }
 
-            Vector3 oldVelocity = _rigidbody.velocity;
+            Vector3 oldVelocity = _rigidbody.linearVelocity;
             Vector3 newVelocity = oldVelocity * _velocityWeight + _smoothedVelocity * _dampingFactor;
 
             // Sanity check for NaN/Infinity
@@ -88,7 +88,7 @@ namespace Meta.XR.InteractionSDK.Samples
                 return;
             }
 
-            _rigidbody.velocity = newVelocity;
+            _rigidbody.linearVelocity = newVelocity;
             _smoothedVelocity = newVelocity;
         }
 
@@ -99,7 +99,7 @@ namespace Meta.XR.InteractionSDK.Samples
                 return;
             }
 
-            _smoothedVelocity = _rigidbody.velocity;
+            _smoothedVelocity = _rigidbody.linearVelocity;
             _smoothedVelocity.z *= _floorImpactBoost;
 
             // Sanity check
@@ -109,7 +109,7 @@ namespace Meta.XR.InteractionSDK.Samples
                 return;
             }
 
-            _rigidbody.velocity = _smoothedVelocity;
+            _rigidbody.linearVelocity = _smoothedVelocity;
             _isAdjusting = true;
         }
 

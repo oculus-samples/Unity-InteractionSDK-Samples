@@ -112,7 +112,7 @@ namespace Meta.XR.InteractionSDK.Samples
                     if (rb != null)
                     {
                         rb.isKinematic = false;
-                        rb.velocity = Vector3.zero;
+                        rb.linearVelocity = Vector3.zero;
                         rb.angularVelocity = Vector3.zero;
                         rb.Sleep();
                     }
@@ -133,7 +133,7 @@ namespace Meta.XR.InteractionSDK.Samples
                         objects[i].localPosition = savedPositions[i];
                         if (rb != null)
                         {
-                            rb.velocity = Vector3.zero;
+                            rb.linearVelocity = Vector3.zero;
                             rb.angularVelocity = Vector3.zero;
                         }
                     }
