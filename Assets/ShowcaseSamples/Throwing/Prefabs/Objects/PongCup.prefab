@@ -1009,6 +1009,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 16106ae094f114f46947dc95c55c29ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value:
+      objectReference: {fileID: 8935746668409149641, guid: d3c995e8367525d49a014eede2dd6aa0, type: 3}
     - target: {fileID: 919132149155446097, guid: 16106ae094f114f46947dc95c55c29ce, type: 3}
       propertyPath: m_Name
       value: PongCup
