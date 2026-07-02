@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactableView: {fileID: 208118302451291658}
   _editor: {fileID: 7623088176230042166}
-  _colorShaderPropertyName: _Color
+  _colorShaderPropertyName: _BaseColor
   _normalColorState:
     Color: {r: 0, g: 0.40000004, b: 0.8784314, a: 1}
     ColorCurve:
