@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.interaction.ovr": "85.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "203.0.0",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.feature.development": "1.0.2",
     "com.unity.multiplayer.center": "1.0.0",
@@ -9,7 +9,7 @@
     "com.unity.ugui": "2.0.0",
     "com.unity.visualscripting": "1.9.7",
     "com.unity.xr.management": "4.5.3",
-    "com.unity.xr.oculus": "4.5.2",
+    "com.unity.xr.openxr": "1.16.1",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
