@@ -28,6 +28,10 @@ MonoBehaviour:
     SceneName: LocomotionExamplesClimbing
     SceneGuid: 5a560cce5d663cc4297ebb760524f802
     Thumbnail: {fileID: 21300000, guid: afc2d7d677d6d9d419ff2253c2d062a7, type: 3}
+  - DisplayName: Mixed Reality Tabletop
+    SceneName: MRGamePortal
+    SceneGuid: 6946aedc9b2f47f46ba142244b1eb538
+    Thumbnail: {fileID: 21300000, guid: 822e8278a58b97d44a6a24d2a0e80aaf, type: 3}
   _sceneInfoAssets:
   - DisplayName: Sliders and Handles
     SceneAsset: {fileID: 102900000, guid: 594f39dab9a65164aa4b9bf8240bdba4, type: 3}
@@ -38,3 +42,6 @@ MonoBehaviour:
   - DisplayName: Locomotion and Climbing
     SceneAsset: {fileID: 102900000, guid: 5a560cce5d663cc4297ebb760524f802, type: 3}
     Thumbnail: {fileID: 21300000, guid: afc2d7d677d6d9d419ff2253c2d062a7, type: 3}
+  - DisplayName: Mixed Reality Tabletop
+    SceneAsset: {fileID: 102900000, guid: 6946aedc9b2f47f46ba142244b1eb538, type: 3}
+    Thumbnail: {fileID: 21300000, guid: 822e8278a58b97d44a6a24d2a0e80aaf, type: 3}

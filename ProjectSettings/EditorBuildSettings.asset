@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/ShowcaseSamples/Locomotion/Scenes/LocomotionExamplesClimbing.unity
     guid: 5a560cce5d663cc4297ebb760524f802
   - enabled: 1
+    path: Assets/ShowcaseSamples/MRTabletop/Scenes/MRGamePortal.unity
+    guid: 6946aedc9b2f47f46ba142244b1eb538
+  - enabled: 1
     path: Assets/Samples/Meta XR Interaction SDK/205.0.0/Example Scenes/BodyPoseDetectionExamples.unity
     guid: c7812b88a0c74384f99b673e01566925
   - enabled: 1
