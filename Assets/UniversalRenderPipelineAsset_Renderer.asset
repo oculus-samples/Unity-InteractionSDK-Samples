@@ -29,9 +29,6 @@ MonoBehaviour:
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
-    terrainDetailLitPS: {fileID: 4800000, guid: f6783ab646d374f94b199774402a5144, type: 3}
-    terrainDetailGrassPS: {fileID: 4800000, guid: e507fdfead5ca47e8b9a768b51c291a1, type: 3}
-    terrainDetailGrassBillboardPS: {fileID: 4800000, guid: 29868e73b638e48ca99a19ea58c48d90, type: 3}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
     serializedVersion: 2
@@ -53,4 +50,4 @@ MonoBehaviour:
   m_DepthAttachmentFormat: 0
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
-  m_IntermediateTextureMode: 1
+  m_IntermediateTextureMode: 0
