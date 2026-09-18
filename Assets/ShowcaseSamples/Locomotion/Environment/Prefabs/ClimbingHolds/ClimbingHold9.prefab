@@ -341,7 +341,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -612,7 +611,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -979,7 +977,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -1058,7 +1055,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -1809,7 +1805,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -1881,6 +1876,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2143,7 +2139,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -2222,7 +2217,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -3165,7 +3159,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 8725452681350837879}
   _rigidbody: {fileID: -1257992470697896462}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -3251,9 +3244,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b1dee7bedcd04a545a7a6a3b300e1590,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 6dfc91a54b75ed24885adb06f173f776, type: 2}
+      objectReference: {fileID: 8703667051492629874, guid: 3564a91a5774b6f45b4e09ddbaa287e1,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: b1dee7bedcd04a545a7a6a3b300e1590,
         type: 3}
       propertyPath: m_Name

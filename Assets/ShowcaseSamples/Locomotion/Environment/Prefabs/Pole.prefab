@@ -858,7 +858,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 103369050183556979}
   _rigidbody: {fileID: 4266348211818008001}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.5
@@ -937,7 +936,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 103369050183556979}
   _rigidbody: {fileID: 4266348211818008001}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.5
@@ -1016,7 +1014,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 103369050183556979}
   _rigidbody: {fileID: 4266348211818008001}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.5
@@ -1217,7 +1214,6 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 103369050183556979}
   _rigidbody: {fileID: 4266348211818008001}
-  _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.5
@@ -1435,6 +1431,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2117,6 +2114,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c2689d9f94fcc0d41a056d2b671cf627,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7753775681533876501, guid: 428ba530b93b9024eae75d6917c05ae2,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: c2689d9f94fcc0d41a056d2b671cf627,
         type: 3}
       propertyPath: m_Name
