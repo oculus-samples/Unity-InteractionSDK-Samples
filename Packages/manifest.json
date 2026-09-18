@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.interaction.ovr": "203.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "205.0.0",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.feature.development": "1.0.2",
     "com.unity.multiplayer.center": "1.0.0",
