@@ -35,6 +35,8 @@ TagManager:
   - QDSUILineDrawing
   - QDSUIBackplate
   - QDSUIToggleCheckboxRadio
+  - Backboard
+  - Floor
   layers:
   - Default
   - TransparentFX
