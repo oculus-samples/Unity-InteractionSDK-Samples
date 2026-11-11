@@ -334,17 +334,35 @@ namespace Oculus.Interaction.Locomotion
         {
             for (int i = 0; i < _climbingStates.Count; i++)
             {
-                _climbingStates[i].ClearDelta();
+                ClimbingState climbingState = _climbingStates[i];
+                climbingState.ClearDelta();
+                _climbingStates[i] = climbingState;
             }
         }
 
         private void CancelAllClimbables()
         {
-            while (_climbingStates.Count > 0)
+            // Each Cancel ends its own grab, which removes that state from the list,
+            // so walk the states backwards from the starting count.
+            int count = _climbingStates.Count;
+            for (int i = count - 1; i >= 0; i--)
             {
-                ClimbingState climbingState = _climbingStates[0];
+                if (i >= _climbingStates.Count)
+                {
+                    continue;
+                }
+
+                ClimbingState climbingState = _climbingStates[i];
                 climbingState.climbable.ProcessPointerEvent(new PointerEvent(
                         climbingState.identifier, PointerEventType.Cancel, climbingState.prevWorldPose));
+            }
+
+            // A grab whose End event never arrived (e.g. its broadcaster was disabled
+            // while holding) is not known to the Climbable anymore, so drop it here.
+            if (_climbingStates.Count > 0)
+            {
+                _climbingStates.Clear();
+                StopClimbing();
             }
 
             ClearDeltas();
@@ -373,6 +391,7 @@ namespace Oculus.Interaction.Locomotion
             }
 
             Pose delta = Pose.identity;
+            float deltaTime = _deltaTimeProvider();
 
             if (_lastGrabMoves)
             {
@@ -392,16 +411,21 @@ namespace Oculus.Interaction.Locomotion
             if (ShouldSlide(out Vector3 slideVelocity))
             {
                 _isSliding = true;
-                delta.position += slideVelocity * _deltaTimeProvider();
+                delta.position += slideVelocity * deltaTime;
             }
             else
             {
                 _isSliding = false;
             }
 
-            _climbingVelocity = Vector3.Lerp(_climbingVelocity,
-                delta.position / _deltaTimeProvider(),
-                _deltaTimeProvider() * _velocityDampness);
+            // A zero delta time would turn the velocity into NaN, which is then
+            // handed over to the locomotor when the climb ends.
+            if (deltaTime > 0f)
+            {
+                _climbingVelocity = Vector3.Lerp(_climbingVelocity,
+                    delta.position / deltaTime,
+                    deltaTime * _velocityDampness);
+            }
 
             LocomotionEvent locomotionEvent = new LocomotionEvent(Identifier, delta,
                 LocomotionEvent.TranslationType.Relative, LocomotionEvent.RotationType.Relative);

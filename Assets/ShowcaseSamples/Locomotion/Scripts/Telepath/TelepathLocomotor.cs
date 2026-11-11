@@ -143,6 +143,13 @@ namespace Oculus.Interaction.Locomotion
 
         public void HandleLocomotionEvent(LocomotionEvent locomotionEvent)
         {
+            // The Locomotor connection keeps forwarding events while this locomotor is
+            // disabled (e.g. Blink teleport style), possibly before it ever started.
+            if (!_started || !isActiveAndEnabled)
+            {
+                return;
+            }
+
             if (locomotionEvent.Translation != LocomotionEvent.TranslationType.None)
             {
                 EndTravel();
